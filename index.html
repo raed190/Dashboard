@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/fremwork.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="container">
+          <div class="logo">
+            <h1 class="p-relative">Raed</h1>
+          </div>
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-chalkboard-user fa-fw"></i> 
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-gears fa-fw"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-user fa-fw"></i> 
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-list-check fa-fw"></i> 
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-user-graduate fa-fw"></i> 
+                  <span>Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-user-group fa-fw"></i> 
+                  <span>Friends</span>
+                </a>
+              </li>
+                <a href="#" class="f-14">
+                  <li><i class="fa-solid fa-folder fa-fw"></i> 
+                  <span>Files</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="f-14">
+                  <i class="fa-solid fa-money-check-dollar fa-fw"></i> 
+                  <span>Plans</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="content fl-width">
+        <header>
+          <div class="container">
+            <div class="form p-relative">
+              <i class="fa-solid fa-magnifying-glass"></i> <input type="text" name="search" placeholder="Type A Keyword">
+            </div>
+            <div class="user-natice p-relative">
+              <div class="notice"><i class="fa-solid fa-bell"></i></div>
+              <div class="avatar"><img src="images/avatar-haeder.jpg" alt="Avatar"></div>
+            </div>
+          </div>
+        </header>
+
+
+        <section class="dashboard">
+          <div class="header"><h2>Dashboard</h2></div>
+          <div class="container mt-30 d-grid">
+
+            <!-- ====== Start Welcome ====== -->
+            <div class="welcome br-10 text-c-mobile  ">
+              <div class="head d-flex justify-between black-bg p-20">
+                <div class="user">
+                  <h3>Welcome</h3>
+                  <span>Raed</span>
+                </div>
+                <div class="image hide-in-mobile"><img src="images/welcome.png" alt="Welcome" /></div>
+              </div>
+              
+              <img class="avatar" src="images/avatar-haeder.jpg" alt="Avatar" />
+              
+              <div class="info d-flex justify-between d-block-mobile mt-30">
+                <div class="name">
+                  <p>Raed Alnahhal</p>
+                  <span>Developer</span>
+                </div>
+                <div class="project">
+                  <p>80</p>
+                  <span>Projects</span>
+                </div>
+                <div class="earn">
+                  <p>$8500</p>
+                  <span>Earned</span>
+                </div>
+              </div>
+                <a class="d-block c-white green-bg br-5 p-10 fit-width f-14 btn" href="#">Profile</a>
+            </div>
+            <!-- ====== End Welcome ====== -->
+
+
+            <!-- ====== Start Draft ====== -->
+            <div class="draft br-10 bg-white p-20">
+                  <h2 class="green-color mb-5">Quick Draft</h2>
+                  <p class="mb-20 c-gray fs-14">Write A Draft For Your Ideas</p>
+              <form >
+                <input class="br-5 d-block mb-10 fl-width p-10 b-none black-bg out-none c-white" type="text" name="title" placeholder="Title" />
+                <textarea class="br-5 d-block mb-10 fl-width p-10 b-none black-bg out-none c-white" name="" placeholder="Your Thought"></textarea>
+                <input class="save b-none out-none d-block c-white green-bg br-5 p-10 fit-width f-14 btn" type="submit" value="Save">
+              </form>
+            </div>
+            <!-- ====== End Draft ====== -->
+
+
+            <!-- ====== Start Targets ====== -->
+            <div class="targets br-10 bg-white p-20">
+                  <h2 class="green-color mb-5">Yearly Targets</h2>
+                  <p class="mb-20 c-gray fs-14">Targets Of The Year</p>
+
+              <div class="statistics">
+
+                <div class="statistic d-flex">
+                  <div class="icon red-bg br-5 flex-center mb-20">
+                    <i class="c-white fs-25 fa-solid fa-sack-dollar"></i>
+                  </div>
+                  <div class="stat">
+                    <div class="info-stat">
+                      <p class="c-gray mb-5">Money</p>
+                      <span class="fb">$20.000</span>
+                    </div>
+                    <div class="progress red-bg2">
+                      <span class="red-bg d-block p-relative" style="width: 76%" data-progress="76%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="statistic d-flex">
+                  <div class="icon green-bg br-5 flex-center mb-20">
+                    <i class="c-white fs-25 fa-solid fa-list-check"></i>
+                  </div>
+                  <div class="stat">
+                    <div class="info-stat">
+                      <p class="c-gray mb-5">Projects</p>
+                      <span class="fb">24</span>
+                    </div>
+                    <div class="progress green-bg2">
+                      <span class="green-bg d-block p-relative" style="width: 35%" data-progress="35%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="statistic d-flex">
+                  <div class="icon yellow-bg br-5 flex-center mb-20">
+                    <i class="c-white fs-25 fa-solid fa-user-plus"></i>
+                  </div>
+                  <div class="stat">
+                    <div class="info-stat">
+                      <p class="c-gray mb-5">Team</p>
+                      <span class="fb">12</span>
+                    </div>
+                    <div class="progress yellow-bg2">
+                      <span class="yellow-bg d-block p-relative" style="width: 62%" data-progress="62%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Targets ====== -->
+
+            <!-- ====== Start Tiecket ====== -->
+            <div class="tiecket br-10 bg-white p-20">
+                  <h2 class="green-color mb-5">Ticets Statistics</h2>
+                  <p class="mb-20 c-gray fs-14">Evrything About Sapport Tickets</p>
+
+              <div class="tieckets d-grid">
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="green-color fs-25 mb-10 fa-solid fa-list-ul"></i>
+                  <p class="fs-25 fb black-color mb-5">2500</p>
+                  <span class="d-block c-gray">Total</span>
+                </div>
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="yellow-color fs-25 mb-10 fa-solid fa-clock-rotate-left"></i>
+                  <p class="fs-25 fb black-color mb-5">500</p>
+                  <span>Pending</span>
+                </div>
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="blue-color fs-25 mb-10 fa-solid fa-flag-checkered"></i>
+                  <p class="fs-25 fb black-color mb-5">1900</p>
+                  <span class="d-block c-gray">Closed</span>
+                </div>
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="red-color fs-25 mb-10 fa-solid fa-trash"></i>
+                  <p class="fs-25 fb black-color mb-5">100</p>
+                  <span class="d-block c-gray">Deleted</span>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Tiecket ====== -->
+
+
+            <!-- ====== Start News ====== -->
+            <div class="news br-10 p-20 bg-white">
+                  <h2 class="green-color mb-20">Latest News</h2>
+              
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="f-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 f-14 c-white fit-width">6 Hours Ago</div>
+              </div>
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="f-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 f-14 c-white fit-width">5 Days Ago</div>
+              </div>
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="f-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 f-14 c-white fit-width">7 Days Ago</div>
+              </div>
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="f-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 f-14 c-white fit-width">9 Days Ago</div>
+              </div>
+            </div>
+            <!-- ====== End News ====== -->
+
+            <!-- ====== Start Tasks ====== -->
+            <div class="tasks p-20 bg-white br-10">
+              <h2 class="green-color mb-20">Latest Tasks</h2>
+              <div class="tasks-info flex-between mb-10">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray f-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray f-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray f-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray f-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray f-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+            </div>
+
+            <!-- ====== End Tasks ====== -->
+
+            <!-- ====== Start Top Search ====== -->
+            <div class="top-search p-20 bg-white br-10">
+              <h2 class="green-color mb-20">Top Search Items</h2>
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="c-gray fb">Keyword</p>
+                </div>
+                <div class="count">
+                  <p class="c-gray fb">Search Count</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">Programming</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">92</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">JavaScript</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">165</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">PHP</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">1044</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">Code</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">321</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">HTML</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">65</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">CSS</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">54</p>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Top Search ====== -->
+
+            <!-- ====== Start Start Uploads ====== -->
+            <div class="latest-uplods bg-white br-10 p-20">
+              <h2 class="green-color mb-20">Latest Uploads</h2>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/pdf-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">my-file.pdf</p>
+                  <span class="c-gray f-14">Raed</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 f-14">
+                  3.5MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/mp4-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">trip-video.mp4</p>
+                  <span class="c-gray f-14">Admin</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 f-14">
+                  320.4MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/png-icon.svg" alt="PDF">
+                <div class="file mb-20">
+                  <p class="black-color fb">my-picture.png</p>
+                  <span class="c-gray f-14">Ahmed</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 f-14">
+                  1.2MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/rar-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">my-file.rar</p>
+                  <span class="c-gray f-14">Mohammed</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 f-14">
+                  60.3MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/exe-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">my-program.exe</p>
+                  <span class="c-gray f-14">Awad</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 f-14">
+                  32.4MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/mp3-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">audio-recording.mp3</p>
+                  <span class="c-gray f-14">Ismael</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 f-14">
+                  3.2MB
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Start Uploads ====== -->
+
+            <!-- ====== Start Project ====== -->
+            <div class="project bg-white br-10 p-20">
+              <h2 class="green-color mb-20">Last Project Progress</h2>
+              <div class="projects">
+                <ul>
+                  <li>Got The Project</li>
+                  <li>Start The Project</li>
+                  <li>The Project About To Finish</li>
+                  <li>Test The Project</li>
+                  <li>Finish The Project & Get Money</li>
+                </ul>
+              </div>
+              <img src="images/project.svg" alt="Project">
+            </div>
+            <!-- ====== End Project ====== -->
+
+            <!-- ====== Start Reminders ====== -->
+            <div class="reminders bg-white p-20 br-10">
+              <h2 class="mb-20 green-color">Reminders</h2>
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Check My Tasks List</p>
+                <span class="f-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Check My Projects</p>
+                <span class="f-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Call All My Clients</p>
+                <span class="f-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Finish The Development Workshop</p>
+                <span class="f-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+            </div>
+            <!-- ====== End Reminders ====== -->
+
+            <!-- ====== Start Post ====== -->
+            <div class="post bg-white p-20 br-10">
+              <h2 class="green-color mb-20">Latest Post</h2>
+              <div class="user d-flex align-center mb-20">
+                <img class="br-50 mr-20 " src="images/avatar-haeder.jpg" alt="Avatar">
+                <div class="name">
+                  <p class="fb ">Raed Hassan</p>
+                  <span class="c-gray f-14">About 9 Houre Ago</span>
+                </div>
+              </div>
+
+              <div class="user-post">
+                <p class="fs-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, corporis nihil deleniti molestias ea nesciunt id similique quia id similique quia</p>
+              </div>
+
+              <div class="like flex-between mb-20">
+                <div class="love cp">
+                  <i class="c-gray fa-regular fa-heart"></i> <span class="c-gray fb">1.5K</span>
+                </div>
+                <div class="comment cp">
+                  <i class="c-gray fa-regular fa-comment"></i> <span class="c-gray fb">360</span>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Post ====== -->
+
+            <!-- ====== Start Social ====== -->
+            <div class="social bg-white br-10 p-20">
+              <h2 class="green-color mb-20">Social Media Stats</h2>
+              <div class="social-icon flex-between mb-20">
+                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                <span class="ml-20 fb">90K Followers</span>
+                <a class="btn c-white" href="#">Follow</a>
+              </div>
+
+              <div class="social-icon flex-between mb-20 fb">
+                <div class="icon fb"><i class="fa-brands fa-facebook-f"></i></div>
+                <span class="ml-20 fb fb">3M Like</span>
+                <a class="fb btn c-white" href="#">Like</a>
+              </div>
+
+              <div class="social-icon flex-between mb-20 yt">
+                <div class="icon yt"><i class="fa-brands fa-youtube"></i></div>
+                <span class="ml-20 fb yt">900K</span>
+                <a class="btn c-white yt" href="#">Subscribe</a>
+              </div>
+
+              <div class="social-icon flex-between mb-20 in">
+                <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <span class="ml-20 fb in">100K Followers</span>
+                <a class="btn c-white in" href="#">Follow</a>
+              </div>
+            </div>
+
+            <!-- ====== Start Social ====== -->
+
+          </div>
+        </section>
+       </div>
+    </main>
+  </body>
+</html>
