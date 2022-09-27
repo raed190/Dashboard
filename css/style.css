@@ -141,6 +141,7 @@ aside nav ul li a span {
 /*======= Start Header =======*/
 .content {
   width: 100%;
+  overflow: hidden;
 }
 header {
   position: relative;
@@ -560,7 +561,7 @@ header .user-natice .avatar img:hover {
   width: 2px;
   height: 85%;
   top: 20px;
-  left: 11px;
+  left: 15px;
   background-color: var(--dark-mountain-meadow);
 }
 
@@ -570,7 +571,7 @@ header .user-natice .avatar img:hover {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  left: 1px;
+  left: 5px;
   background-color: var(--dark-mountain-meadow);
   outline: 2px solid var(--dark-mountain-meadow);
   border: 2px solid #fff;
@@ -738,3 +739,54 @@ header .user-natice .avatar img:hover {
   color: #4267b2;
 }
 /* ====== End Social ====== */
+
+/* ====== Start Project ====== */
+.project-table {
+  overflow-x: auto;
+}
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 1rem;
+  background: #1e3c72;
+  background: -webkit-linear-gradient(-68deg, #1e3c72, #2869db);
+  background: -o-linear-gradient(-68deg, #1e3c72, #2869db);
+  background: -moz-linear-gradient(-68deg, #1e3c72, #2869db);
+  background: linear-gradient(-68deg, #1e3c72, #2869db);
+  overflow: hidden;
+}
+
+td {
+  color: #fff;
+  line-height: 1.4;
+  padding: 1.12rem 1rem 0.9rem 1.9rem;
+  border-bottom: 1px solid #5687dd;
+  border-left: 1px solid #5687dd;
+}
+
+td,
+tr {
+  transition: var(--main-transiton);
+}
+
+th {
+  font-size: 0.75rem;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding: 1.5rem 1rem 1.25rem 1.9rem;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.32);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ====== End Project ====== */
