@@ -295,8 +295,8 @@ header .user-natice .avatar img:hover {
 
 .welcome .info {
   padding: 1rem 2rem;
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #e3e0e0;
+  border-bottom: 1px solid #e3e0e0;
 }
 
 .welcome .info > div {
@@ -461,7 +461,7 @@ header .user-natice .avatar img:hover {
 }
 
 .news .news-info:not(:last-child) {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e3e0e0;
 }
 .news .news-info .image img {
   width: 120px;
@@ -497,7 +497,7 @@ header .user-natice .avatar img:hover {
 
 /*======= Start Tasks =======*/
 .tasks .tasks-info:not(:last-child) {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e3e0e0;
 }
 
 .tasks .tasks-info i {
@@ -536,7 +536,7 @@ header .user-natice .avatar img:hover {
 }
 
 .latest-uplods .upload:not(:last-child) {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e3e0e0;
 }
 /*======= End Uploads =======*/
 
@@ -660,8 +660,8 @@ header .user-natice .avatar img:hover {
 }
 
 .post .user-post {
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #e3e0e0;
+  border-bottom: 1px solid #e3e0e0;
   margin: 2rem 0;
   padding: 1.5rem 0;
 }
@@ -789,3 +789,281 @@ td:hover {
 }
 
 /* ====== End Project ====== */
+
+/* ============================== End Dashbord Page ====================================== */
+
+/* ============================== Start Settings Page ====================================== */
+
+/* ====== Start Site Control ====== */
+
+.control textarea {
+  height: 170px;
+  resize: none;
+  outline: none;
+  border: 1px solid #e3e0e0;
+}
+.control textarea::placeholder {
+  color: #9aacbf;
+  transition: var(--main-transiton);
+}
+.control textarea:focus::placeholder {
+  opacity: 0;
+}
+
+/* ====== End Site Control ====== */
+
+/* ====== Start General Info ====== */
+
+.general form input[type="text"],
+.general form input[type="email"] {
+  border: 1px solid #e3e0e0;
+  outline: none;
+}
+
+.general form input[type="text"]::placeholder {
+  color: #9aacbf;
+  transition: var(--main-transiton);
+}
+
+.general form input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
+.general form .email a {
+  transition: var(--main-transiton);
+}
+
+.general form .email a:hover {
+  color: var(--wild-caribbean-green);
+}
+
+.general form input[type="submit"] {
+  display: block;
+  margin: 0 0 0 auto;
+  transition: var(--main-transiton);
+  cursor: pointer;
+}
+
+.general form input[type="submit"]:hover {
+  background-color: var(--wild-caribbean-green);
+}
+/* ====== End General Info ====== */
+
+/* ====== Start Security Info ====== */
+.security .box:not(:last-child) {
+  border-bottom: 1px solid #e3e0e0;
+  padding-bottom: 1rem;
+}
+.security .box a {
+  transition: var(--main-transiton);
+}
+.security .box a:hover {
+  background-color: var(--wild-caribbean-green);
+}
+/* ====== End Security Info ====== */
+
+/* ====== Start Social Info ====== */
+
+.social-info .social-box {
+  position: relative;
+  overflow: hidden;
+}
+.social-info .social-box input[type="text"] {
+  border: 1px solid #e3e0e0;
+  position: relative;
+  padding-left: 3rem;
+  background-color: #f2f7fd;
+}
+
+.social-info .social-box input[type="text"]::placeholder {
+  color: #9aacbf;
+  transition: var(--main-transiton);
+}
+.social-info .social-box input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+.social-info .social-box i {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e3e0e0;
+  font-size: 1.25rem;
+}
+
+.social-info a {
+  display: block;
+  margin: 0 0 0 auto;
+  transition: var(--main-transiton);
+}
+
+.social-info a:hover {
+  background-color: var(--wild-caribbean-green);
+}
+/* ====== End Social Info ====== */
+
+/* ====== Start Widgets Control ====== */
+
+.control-check {
+  display: block;
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.control-check input {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #e3e0e0;
+  transition: var(--main-transiton);
+}
+
+.control-check:hover input ~ .checkmark {
+  background-color: #f0e6e6;
+}
+
+.control-check input:checked ~ .checkmark {
+  background-color: var(--dark-mountain-meadow);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.control-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.control-check .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: var(--main-transiton);
+}
+
+.control input[type="submit"] {
+  display: block;
+  margin: 0 0 0 auto;
+  transition: var(--main-transiton);
+  cursor: pointer;
+}
+
+.control input[type="submit"]:hover {
+  background-color: var(--wild-caribbean-green);
+}
+/* ====== End Widgets Control ====== */
+
+/* ====== Start Backup Manager ====== */
+.time form input {
+  display: none;
+}
+
+.time form label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  color: var(--imperial-primer);
+  display: flex;
+}
+
+.time form label:before {
+  background-color: #fff;
+  border: 2px solid var(--dark-mountain-meadow);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  margin-right: 0.7rem;
+  width: 20px;
+}
+
+.time form input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--dark-mountain-meadow);
+  border-radius: 50%;
+}
+
+.time {
+  border-bottom: 1px solid #e3e0e0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.location .box {
+  border: 2px solid #e3e0e0;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  transition: var(--main-transiton);
+  cursor: pointer;
+}
+.location .box p {
+  transition: var(--main-transiton);
+}
+.location .box img {
+  width: 40px;
+}
+
+.location .box:hover {
+  border: 2px solid var(--dark-mountain-meadow);
+  transform: scale(1.1);
+}
+
+.location .box:hover p {
+  color: var(--dark-mountain-meadow);
+}
+
+.backup a {
+  display: block;
+  margin: 0 0 0 auto;
+  transition: var(--main-transiton);
+}
+
+.backup a:hover {
+  background-color: var(--wild-caribbean-green);
+}
+@media (max-width: 767px) {
+  .location {
+    gap: 10px;
+  }
+  .location .box {
+    width: 33%;
+  }
+  .location .box img {
+    width: 30px;
+  }
+}
+/* ====== End Backup Manager ====== */
+
+/* ============================== End Settings Page ====================================== */
