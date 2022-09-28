@@ -23,7 +23,7 @@
 /*======= End Position =======*/
 
 /*======= Start Font =======*/
-.f-14 {
+.fs-14 {
   font-size: 0.875rem;
 }
 .fs-18 {
@@ -95,12 +95,17 @@
 .p-5 {
   padding: 0.33rem;
 }
+
+.p-10 {
+  padding: 0.6rem;
+}
+
 .p-20 {
   padding: 1rem;
 }
 
-.p-10 {
-  padding: 0.6rem;
+.p-30 {
+  padding: 1.9rem;
 }
 
 .mb-5 {
@@ -217,6 +222,9 @@
   background-color: #54a0ff;
 }
 
+.bg-gray {
+  background-color: #9aacbf;
+}
 /*======= End color =======*/
 
 .cp {
@@ -238,4 +246,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+.toggle input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  width: 4em;
+  height: 1.6em;
+  border-radius: 1em;
+  background-color: var(--amour);
+  cursor: pointer;
+  transition: var(--main-transiton);
+}
+.toggle input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 1em;
+  box-shadow: 0 0.25rem 0.525rem 0 rgba(0, 0, 0, 0.08);
+  left: 0.2em;
+  top: 0.2em;
+  transition: var(--main-transiton);
+  background-color: #fff;
+}
+.toggle input[type="checkbox"]:checked + label {
+  background: var(--dark-mountain-meadow);
+}
+.toggle input[type="checkbox"]:checked + label:before {
+  box-shadow: 0 0.25rem 0.525rem 0 rgba(0, 0, 0, 0.08);
+  left: 2.6em;
 }
