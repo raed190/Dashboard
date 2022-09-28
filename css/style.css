@@ -58,7 +58,8 @@ aside {
 
 aside .logo {
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem;
+  position: fixed;
 }
 aside .logo h1 {
   color: var(--dark-mountain-meadow);
@@ -87,6 +88,8 @@ aside .logo h1::after {
 }
 aside nav {
   margin-top: 5rem;
+  position: fixed;
+  top: 50px;
 }
 aside nav ul li a {
   display: block;
@@ -116,11 +119,7 @@ aside nav ul li a span {
   aside {
     width: 80px;
   }
-  aside .logo h1 {
-    font-size: 1.125rem;
-  }
-  aside .logo h1::before,
-  aside .logo h1::after {
+  aside .logo {
     display: none;
   }
   aside nav {
