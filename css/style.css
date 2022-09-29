@@ -760,11 +760,43 @@ table {
 td {
   color: #fff;
   line-height: 1.4;
-  padding: 1.12rem 1rem 0.9rem 1.9rem;
+  padding: 1rem 0.9rem;
   border-bottom: 1px solid #5687dd;
   border-left: 1px solid #5687dd;
+  position: relative;
+  width: 170px;
 }
 
+td .team {
+  position: relative;
+  transition: var(--main-transiton);
+  left: -5px;
+}
+td img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}
+td img:nth-child(2) {
+  left: 10px;
+}
+
+td img:nth-child(3) {
+  left: 20px;
+}
+td img:nth-child(4) {
+  left: 30px;
+}
+
+td img:nth-child(5) {
+  left: 40px;
+}
+td img:hover {
+  z-index: 1;
+}
 td,
 tr {
   transition: var(--main-transiton);
@@ -974,6 +1006,10 @@ td:hover {
 /* ====== End Widgets Control ====== */
 
 /* ====== Start Backup Manager ====== */
+
+.time {
+  border-bottom: 1px solid #e3e0e0;
+}
 .time form input {
   display: none;
 }
@@ -1007,10 +1043,6 @@ td:hover {
   height: 14px;
   background-color: var(--dark-mountain-meadow);
   border-radius: 50%;
-}
-
-.time {
-  border-bottom: 1px solid #e3e0e0;
 }
 
 .location {
