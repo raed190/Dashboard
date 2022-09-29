@@ -1,1101 +1,677 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
-:root {
-  --wild-caribbean-green: #1dd1a1;
-  --dark-mountain-meadow: #10ac84;
-  --imperial-primer: #222f3e;
-  --fuel-town: #576574;
-  --pastel-red: #ff6b6b;
-  --amour: #ee5253;
-  --double-dragon-skin: #ff9f43;
-  --casandora-yellow: #feca57;
-  --bleu-de-france: #2e86de;
-  --joust-blue: #54a0ff;
-  --main-transiton: all 0.4s;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: "Open Sans", sans-serif;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-h1,
-h2,
-h3 {
-  font-family: "Raleway", sans-serif;
-}
-/*======= Start Aside =======*/
-main {
-  display: flex;
-  min-height: 100vh;
-}
-aside {
-  box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
-  min-height: 100vh;
-  width: 250px;
-  transition: width 0.4s;
-  background-color: var(--imperial-primer);
-}
-
-aside .logo {
-  text-align: center;
-  margin: 2rem;
-  position: fixed;
-}
-aside .logo h1 {
-  color: var(--dark-mountain-meadow);
-}
-aside .logo h1::before {
-  content: "";
-  position: absolute;
-  bottom: -80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 2px;
-  background-color: var(--wild-caribbean-green);
-}
-aside .logo h1::after {
-  content: "";
-  position: absolute;
-  bottom: -110%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: var(--dark-mountain-meadow);
-  border: 4px solid var(--imperial-primer);
-}
-aside nav {
-  margin-top: 5rem;
-  position: fixed;
-  top: 50px;
-}
-aside nav ul li a {
-  display: block;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  color: #fff;
-  font-weight: bold;
-  transition: var(--main-transiton);
-}
-aside nav ul li a:hover {
-  background-color: var(--dark-mountain-meadow);
-  border-radius: 5px;
-}
-aside nav ul li a i {
-  padding-right: 0.5rem;
-}
-
-aside nav ul li.active {
-  background-color: var(--dark-mountain-meadow);
-  border-radius: 5px;
-}
-aside nav ul li a span {
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 767px) {
-  aside {
-    width: 80px;
-  }
-  aside .logo {
-    display: none;
-  }
-  aside nav {
-    margin-top: 0;
-  }
-  aside nav ul li a > i {
-    font-size: 18px;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-  aside nav ul li a span {
-    display: none;
-  }
-}
-/*======= End Aside =======*/
-
-/*======= Start Header =======*/
-.content {
-  width: 100%;
-  overflow: hidden;
-}
-header {
-  position: relative;
-  padding-top: 1rem;
-  height: 70px;
-  box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
-  background-color: var(--imperial-primer);
-}
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .form input[type="text"] {
-  outline: none;
-  padding: 0.6rem 2rem;
-  border-radius: 10px;
-  border: 1px solid var(--imperial-primer);
-  width: 165px;
-  transition: var(--main-transiton);
-}
-header .form input[type="text"]::placeholder {
-  color: #a78e8e;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-}
-
-header .form input[type="text"]:focus {
-  width: 200px;
-}
-header .form i {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: #a78e8e;
-}
-header .user-natice {
-  display: flex;
-  align-items: center;
-}
-header .user-natice::before {
-  position: absolute;
-  content: "3";
-  top: 0;
-  left: 17px;
-  width: 15px;
-  height: 15px;
-  background-color: var(--pastel-red);
-  border-radius: 50%;
-  color: #fff;
-  font-weight: bold;
-  font-size: 10px;
-  display: flex;
-  justify-content: center;
-}
-header .user-natice .notice i {
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--dark-mountain-meadow);
-  transition: var(--main-transiton);
-}
-header .user-natice .notice i:hover {
-  color: var(--wild-caribbean-green);
-}
-header .user-natice .avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-left: 1.5rem;
-  cursor: pointer;
-  filter: opacity(0.5);
-  transition: var(--main-transiton);
-  border: 3px solid var(--dark-mountain-meadow);
-}
-
-header .user-natice .avatar img:hover {
-  filter: opacity(1);
-}
-
-/*======= End Header =======*/
-
-/*======= End Dashboard =======*/
-.dashboard {
-  padding-top: 1rem;
-  background-color: var(--fuel-town);
-  height: 100%;
-}
-.dashboard .container {
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  gap: 20px;
-}
-
-@media (max-width: 767px) {
-  .dashboard .container {
-    grid-template-columns: minmax(200px, 1fr);
-  }
-}
-.dashboard .header {
-  padding-left: 20px;
-}
-.dashboard .header h2 {
-  position: relative;
-  width: fit-content;
-  color: var(--dark-mountain-meadow);
-}
-
-.dashboard .header h2::before,
-.dashboard .header h2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: -10px;
-  left: 0;
-  background-color: var(--dark-mountain-meadow);
-}
-.dashboard .header h2::after {
-  width: 30%;
-  background-color: var(--wild-caribbean-green);
-}
-
-/*======= Start Welcome =======*/
-.welcome {
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.welcome .head .user h3 {
-  color: var(--dark-mountain-meadow);
-  margin-bottom: 0.2rem;
-  font-size: 1.5rem;
-}
-.welcome .head .user span {
-  color: #fff;
-  font-size: 0.87rem;
-}
-.welcome .head .image img {
-  width: 170px;
-  margin-bottom: -10px;
-}
-
-.welcome .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 3px solid var(--dark-mountain-meadow);
-  margin-top: -25px;
-  margin-left: 20px;
-}
-
-.welcome .info {
-  padding: 1rem 2rem;
-  border-top: 1px solid #e3e0e0;
-  border-bottom: 1px solid #e3e0e0;
-}
-
-.welcome .info > div {
-  margin-bottom: 1rem;
-}
-
-.welcome.info p {
-  color: var(--imperial-primer);
-  font-weight: bold;
-  text-align: center;
-}
-.welcome .info span {
-  color: #9aacbf;
-  font-size: 13px;
-  display: block;
-  text-align: center;
-}
-
-.welcome a {
-  transition: var(--main-transiton);
-  margin: 2rem 1rem 1.25rem auto;
-}
-.welcome a:hover {
-  background-color: var(--wild-caribbean-green);
-}
-
-/*======= End Welcome =======*/
-
-/*======= Start Draft =======*/
-
-.draft form input[type="text"]::placeholder {
-  color: var(--fuel-town);
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  transition: 0.4s;
-}
-.draft form input[type="text"]:focus::placeholder {
-  opacity: 0;
-}
-
-.draft form textarea {
-  height: 170px;
-  resize: none;
-}
-
-.draft form textarea::placeholder {
-  color: var(--fuel-town);
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  transition: 0.4s;
-}
-.draft form textarea:focus::placeholder {
-  opacity: 0;
-}
-.draft form .save {
-  margin: 0.63rem 0 1.25rem auto;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.draft form .save:hover {
-  background-color: var(--wild-caribbean-green);
-}
-/*======= End Draft =======*/
-
-/*======= Start Targets =======*/
-
-.targets .statistics .statistic .icon {
-  width: 80px;
-  height: 80px;
-  position: relative;
-  transition: var(--main-transiton);
-  box-shadow: 0 0.25rem 0.525rem 0 rgba(0, 0, 0, 0.08);
-}
-
-.targets .statistics .statistic .icon:hover {
-  transform: scale(1.1);
-}
-.targets .statistics .statistic .stat {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.targets .statistics .statistic .info-stat {
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-}
-
-.targets .statistics .statistic .progress {
-  width: 95%;
-  height: 5px;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-}
-
-.targets .statistics .statistic .progress span {
-  height: 5px;
-}
-
-.targets .statistics .statistic .progress span::before {
-  content: attr(data-progress);
-  position: absolute;
-  top: -35px;
-  right: -20px;
-  width: 40px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  font-size: 0.8rem;
-  border-radius: 5px;
-}
-
-.targets .statistics .statistic .progress span::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: -5px;
-  border-width: 6px;
-  border-style: solid;
-}
-.targets .statistics .statistic .progress .red-bg::before {
-  background-color: var(--amour);
-}
-.targets .statistics .statistic .progress .red-bg::after {
-  border-color: var(--amour) transparent transparent transparent;
-}
-.targets .statistics .statistic .progress .green-bg::before {
-  background-color: var(--dark-mountain-meadow);
-}
-.targets .statistics .statistic .progress .green-bg::after {
-  border-color: var(--dark-mountain-meadow) transparent transparent transparent;
-}
-.targets .statistics .statistic .progress .yellow-bg::before {
-  background-color: var(--double-dragon-skin);
-}
-.targets .statistics .statistic .progress .yellow-bg::after {
-  border-color: var(--double-dragon-skin) transparent transparent transparent;
-}
-
-/*======= End Targets =======*/
-
-/*======= Start Tiecket =======*/
-.tiecket .tieckets {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.tiecket .tieckets .tieck-box {
-  border: 1px solid #ddd9d9;
-}
-
-/*======= End Tiecket =======*/
-
-/*======= Start News =======*/
-
-.news .news-info {
-  display: flex;
-  align-items: center;
-  padding: 0.4rem 0;
-}
-
-.news .news-info:not(:last-child) {
-  border-bottom: 1px solid #e3e0e0;
-}
-.news .news-info .image img {
-  width: 120px;
-  margin-right: 0.5rem;
-  transition: var(--main-transiton);
-  box-shadow: 0 0.25rem 0.525rem 0 rgba(0, 0, 0, 0.08);
-}
-
-.news .news-info .image img:hover {
-  transform: scale(1.1);
-}
-.news .news-info .news {
-  flex: 1;
-}
-
-.news .news-info .time {
-  padding: 0.2rem 0.5rem;
-}
-
-@media (max-width: 767px) {
-  .news .news-info {
-    display: block;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .news .news-info .time {
-    margin: auto;
-    margin-top: 1rem;
-  }
-}
-/*======= End News =======*/
-
-/*======= Start Tasks =======*/
-.tasks .tasks-info:not(:last-child) {
-  border-bottom: 1px solid #e3e0e0;
-}
-
-.tasks .tasks-info i {
-  cursor: pointer;
-  transition: var(--main-transiton);
-}
-
-.tasks .tasks-info i:hover {
-  color: var(--pastel-red);
-}
-.tasks .tasks-info:nth-child(4) .task {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-
-.tasks .tasks-info:nth-child(4) i {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-/*======= End Tasks =======*/
-
-/*======= Start Top Search =======*/
-
-.top-search .keywords .count p {
-  padding: 0.1rem 0.5rem;
-}
-/*======= End Top Search =======*/
-
-/*======= Start Uploads =======*/
-.latest-uplods .upload img {
-  width: 40px;
-  margin-right: 1rem;
-}
-.latest-uplods .upload .file {
-  flex: 1;
-}
-
-.latest-uplods .upload:not(:last-child) {
-  border-bottom: 1px solid #e3e0e0;
-}
-/*======= End Uploads =======*/
-
-/* ====== Start Project ====== */
-.project {
-  position: relative;
-}
-
-.project .projects {
-  position: relative;
-}
-
-.project .projects ul li {
-  padding: 1rem 3rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.project .projects ul li::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 85%;
-  top: 20px;
-  left: 15px;
-  background-color: var(--dark-mountain-meadow);
-}
-
-.project .projects ul li::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  left: 5px;
-  background-color: var(--dark-mountain-meadow);
-  outline: 2px solid var(--dark-mountain-meadow);
-  border: 2px solid #fff;
-  z-index: 1;
-}
-
-.project .projects ul li:nth-child(4)::after {
-  outline: 2px solid var(--dark-mountain-meadow);
-  border: 2px solid #fff;
-  background-color: var(--wild-caribbean-green);
-  width: 16px;
-  height: 16px;
-}
-.project .projects ul li:last-child::after {
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-}
-
-.project img {
-  width: 120px;
-  opacity: 0.2;
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
-}
-/* ====== End Project ====== */
-
-/* ====== Start Reminders ====== */
-.reminders .remin {
-  position: relative;
-  padding: 0 3rem;
-}
-
-.reminders .remin::before,
-.reminders .remin::after {
-  content: "";
-  position: absolute;
-  background-color: var(--amour);
-}
-.reminders .remin::before {
-  width: 3px;
-  height: 100%;
-  left: 30px;
-  top: 0;
-}
-
-.reminders .remin::after {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.reminders .remin:nth-child(3):before {
-  background-color: var(--double-dragon-skin);
-}
-
-.reminders .remin:nth-child(3)::after {
-  background-color: var(--double-dragon-skin);
-}
-
-.reminders .remin:nth-child(4):before {
-  background-color: var(--dark-mountain-meadow);
-}
-
-.reminders .remin:nth-child(4)::after {
-  background-color: var(--dark-mountain-meadow);
-}
-
-.reminders .remin:last-child:before {
-  background-color: var(--bleu-de-france);
-}
-
-.reminders .remin:last-child::after {
-  background-color: var(--bleu-de-france);
-}
-
-/* ====== End Reminders ====== */
-
-/* ====== Start Post ====== */
-.post .user img {
-  width: 60px;
-  height: 60px;
-}
-
-.post .user-post {
-  border-top: 1px solid #e3e0e0;
-  border-bottom: 1px solid #e3e0e0;
-  margin: 2rem 0;
-  padding: 1.5rem 0;
-}
-
-.post .user-post p {
-  line-height: 1.7;
-  font-weight: 500;
-}
-/* ====== End Post ====== */
-
-/* ====== Start Social ====== */
-
-.social .social-icon {
-  background-color: rgb(29 161 242 / 33%);
-}
-.social .social-icon .icon {
-  width: 60px;
-  height: 60px;
-  background-color: #1da1f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.social .social-icon i {
-  font-size: 2rem;
-  color: #fff;
-}
-.social .social-icon span {
-  flex: 1;
-  color: #1da1f2;
-}
-
-.social .social-icon a {
-  margin-right: 1rem;
-  background-color: #1da1f2;
-  transition: var(--main-transiton);
-}
-
-.social .social-icon a:hover {
-  opacity: 0.8;
-}
-.social .social-icon.fb {
-  background-color: rgb(66 103 178 / 33%);
-}
-.social .social-icon .icon.fb,
-.social .social-icon a.fb {
-  background-color: #4267b2;
-}
-
-.social .social-icon span.fb {
-  color: #4267b2;
-}
-
-.social .social-icon.yt {
-  background-color: rgb(255 0 0 / 33%);
-}
-.social .social-icon .icon.yt,
-.social .social-icon a.yt {
-  background-color: #ff0000;
-}
-.social .social-icon span.yt {
-  color: #ff0000;
-}
-
-.social .social-icon.in {
-  background-color: rgb(10 102 194 / 33%);
-}
-.social .social-icon .icon.in,
-.social .social-icon a.in {
-  background-color: #0a66c2;
-}
-
-.social .social-icon span.in {
-  color: #4267b2;
-}
-/* ====== End Social ====== */
-
-/* ====== Start Project ====== */
-.project-table {
-  overflow-x: auto;
-}
-
-table {
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-radius: 1rem;
-  background: #1e3c72;
-  background: -webkit-linear-gradient(-68deg, #1e3c72, #2869db);
-  background: -o-linear-gradient(-68deg, #1e3c72, #2869db);
-  background: -moz-linear-gradient(-68deg, #1e3c72, #2869db);
-  background: linear-gradient(-68deg, #1e3c72, #2869db);
-  overflow: hidden;
-}
-
-td {
-  color: #fff;
-  line-height: 1.4;
-  padding: 1rem 0.9rem;
-  border-bottom: 1px solid #5687dd;
-  border-left: 1px solid #5687dd;
-  position: relative;
-  width: 170px;
-}
-
-td .team {
-  position: relative;
-  transition: var(--main-transiton);
-  left: -5px;
-}
-td img {
-  width: 30px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
-}
-td img:nth-child(2) {
-  left: 10px;
-}
-
-td img:nth-child(3) {
-  left: 20px;
-}
-td img:nth-child(4) {
-  left: 30px;
-}
-
-td img:nth-child(5) {
-  left: 40px;
-}
-td img:hover {
-  z-index: 1;
-}
-td,
-tr {
-  transition: var(--main-transiton);
-}
-
-th {
-  font-size: 0.75rem;
-  color: #fff;
-  line-height: 1.4;
-  text-transform: uppercase;
-  padding: 1.5rem 1rem 1.25rem 1.9rem;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.32);
-}
-
-tr:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-td:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* ====== End Project ====== */
-
-/* ============================== End Dashbord Page ====================================== */
-
-/* ============================== Start Settings Page ====================================== */
-
-/* ====== Start Site Control ====== */
-
-.control textarea {
-  height: 170px;
-  resize: none;
-  outline: none;
-  border: 1px solid #e3e0e0;
-}
-.control textarea::placeholder {
-  color: #9aacbf;
-  transition: var(--main-transiton);
-}
-.control textarea:focus::placeholder {
-  opacity: 0;
-}
-
-/* ====== End Site Control ====== */
-
-/* ====== Start General Info ====== */
-
-.general form input[type="text"],
-.general form input[type="email"] {
-  border: 1px solid #e3e0e0;
-  outline: none;
-}
-
-.general form input[type="text"]::placeholder {
-  color: #9aacbf;
-  transition: var(--main-transiton);
-}
-
-.general form input[type="text"]:focus::placeholder {
-  opacity: 0;
-}
-
-.general form .email a {
-  transition: var(--main-transiton);
-}
-
-.general form .email a:hover {
-  color: var(--wild-caribbean-green);
-}
-
-.general form input[type="submit"] {
-  display: block;
-  margin: 0 0 0 auto;
-  transition: var(--main-transiton);
-  cursor: pointer;
-}
-
-.general form input[type="submit"]:hover {
-  background-color: var(--wild-caribbean-green);
-}
-/* ====== End General Info ====== */
-
-/* ====== Start Security Info ====== */
-.security .box:not(:last-child) {
-  border-bottom: 1px solid #e3e0e0;
-  padding-bottom: 1rem;
-}
-.security .box a {
-  transition: var(--main-transiton);
-}
-.security .box a:hover {
-  background-color: var(--wild-caribbean-green);
-}
-/* ====== End Security Info ====== */
-
-/* ====== Start Social Info ====== */
-
-.social-info .social-box {
-  position: relative;
-  overflow: hidden;
-}
-.social-info .social-box input[type="text"] {
-  border: 1px solid #e3e0e0;
-  position: relative;
-  padding-left: 3rem;
-  background-color: #f2f7fd;
-}
-
-.social-info .social-box input[type="text"]::placeholder {
-  color: #9aacbf;
-  transition: var(--main-transiton);
-}
-.social-info .social-box input[type="text"]:focus::placeholder {
-  opacity: 0;
-}
-.social-info .social-box i {
-  position: absolute;
-  z-index: 1;
-  width: 40px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #e3e0e0;
-  font-size: 1.25rem;
-}
-
-.social-info a {
-  display: block;
-  margin: 0 0 0 auto;
-  transition: var(--main-transiton);
-}
-
-.social-info a:hover {
-  background-color: var(--wild-caribbean-green);
-}
-/* ====== End Social Info ====== */
-
-/* ====== Start Widgets Control ====== */
-
-.control-check {
-  display: block;
-  position: relative;
-  padding-left: 2.5rem;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.control-check input {
-  display: none;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #fff;
-  border: 1px solid #e3e0e0;
-  transition: var(--main-transiton);
-}
-
-.control-check:hover input ~ .checkmark {
-  background-color: #f0e6e6;
-}
-
-.control-check input:checked ~ .checkmark {
-  background-color: var(--dark-mountain-meadow);
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.control-check input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.control-check .checkmark:after {
-  left: 8px;
-  top: 3px;
-  width: 4px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transition: var(--main-transiton);
-}
-
-.control input[type="submit"] {
-  display: block;
-  margin: 0 0 0 auto;
-  transition: var(--main-transiton);
-  cursor: pointer;
-}
-
-.control input[type="submit"]:hover {
-  background-color: var(--wild-caribbean-green);
-}
-/* ====== End Widgets Control ====== */
-
-/* ====== Start Backup Manager ====== */
-
-.time {
-  border-bottom: 1px solid #e3e0e0;
-}
-.time form input {
-  display: none;
-}
-
-.time form label {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  font-weight: bold;
-  color: var(--imperial-primer);
-  display: flex;
-}
-
-.time form label:before {
-  background-color: #fff;
-  border: 2px solid var(--dark-mountain-meadow);
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  height: 20px;
-  margin-right: 0.7rem;
-  width: 20px;
-}
-
-.time form input[type="radio"]:checked + label:after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 14px;
-  height: 14px;
-  background-color: var(--dark-mountain-meadow);
-  border-radius: 50%;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.location .box {
-  border: 2px solid #e3e0e0;
-  width: 30%;
-  text-align: center;
-  border-radius: 10px;
-  transition: var(--main-transiton);
-  cursor: pointer;
-}
-.location .box p {
-  transition: var(--main-transiton);
-}
-.location .box img {
-  width: 40px;
-}
-
-.location .box:hover {
-  border: 2px solid var(--dark-mountain-meadow);
-  transform: scale(1.1);
-}
-
-.location .box:hover p {
-  color: var(--dark-mountain-meadow);
-}
-
-.backup a {
-  display: block;
-  margin: 0 0 0 auto;
-  transition: var(--main-transiton);
-}
-
-.backup a:hover {
-  background-color: var(--wild-caribbean-green);
-}
-@media (max-width: 767px) {
-  .location {
-    gap: 10px;
-  }
-  .location .box {
-    width: 33%;
-  }
-  .location .box img {
-    width: 30px;
-  }
-}
-/* ====== End Backup Manager ====== */
-
-/* ============================== End Settings Page ====================================== */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/fremwork.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="container">
+          <div class="logo">
+            <h1 class="p-relative">Raed</h1>
+          </div>
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="index.html" class="fs-14">
+                  <i class="fa-solid fa-chalkboard-user fa-fw"></i> 
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="fs-14">
+                  <i class="fa-solid fa-gears fa-fw"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="fs-14">
+                  <i class="fa-solid fa-user fa-fw"></i> 
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="fs-14">
+                  <i class="fa-solid fa-list-check fa-fw"></i> 
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="fs-14">
+                  <i class="fa-solid fa-user-graduate fa-fw"></i> 
+                  <span>Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="fs-14">
+                  <i class="fa-solid fa-user-group fa-fw"></i> 
+                  <span>Friends</span>
+                </a>
+              </li>
+                <a href="#" class="fs-14">
+                  <li><i class="fa-solid fa-folder fa-fw"></i> 
+                  <span>Files</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="fs-14">
+                  <i class="fa-solid fa-money-check-dollar fa-fw"></i> 
+                  <span>Plans</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="content fl-width">
+        <header>
+          <div class="container">
+            <div class="form p-relative">
+              <i class="fa-solid fa-magnifying-glass"></i> <input type="text" name="search" placeholder="Type A Keyword">
+            </div>
+            <div class="user-natice p-relative">
+              <div class="notice"><i class="fa-solid fa-bell"></i></div>
+              <div class="avatar"><img src="images/avatar-haeder.jpg" alt="Avatar"></div>
+            </div>
+          </div>
+        </header>
+
+
+        <section class="dashboard">
+          <div class="header"><h2>Dashboard</h2></div>
+          <div class="container mt-30 d-grid">
+
+            <!-- ====== Start Welcome ====== -->
+            <div class="welcome br-10 text-c-mobile  ">
+              <div class="head d-flex justify-between black-bg p-20">
+                <div class="user">
+                  <h3>Welcome</h3>
+                  <span>Raed</span>
+                </div>
+                <div class="image hide-in-mobile"><img src="images/welcome.png" alt="Welcome" /></div>
+              </div>
+              
+              <img class="avatar" src="images/avatar-haeder.jpg" alt="Avatar" />
+              
+              <div class="info d-flex justify-between d-block-mobile mt-30">
+                <div class="name">
+                  <p>Raed Alnahhal</p>
+                  <span>Developer</span>
+                </div>
+                <div class="project">
+                  <p>80</p>
+                  <span>Projects</span>
+                </div>
+                <div class="earn">
+                  <p>$8500</p>
+                  <span>Earned</span>
+                </div>
+              </div>
+                <a class="d-block c-white green-bg br-5 p-10 fit-width fs-14 btn" href="#">Profile</a>
+            </div>
+            <!-- ====== End Welcome ====== -->
+
+
+            <!-- ====== Start Draft ====== -->
+            <div class="draft br-10 bg-white p-20">
+                  <h2 class="green-color mb-5">Quick Draft</h2>
+                  <p class="mb-20 c-gray fs-14">Write A Draft For Your Ideas</p>
+              <form >
+                <input class="br-5 d-block mb-10 fl-width p-10 b-none black-bg out-none c-white" type="text" name="title" placeholder="Title" />
+                <textarea class="br-5 d-block mb-10 fl-width p-10 b-none black-bg out-none c-white" name="" placeholder="Your Thought"></textarea>
+                <input class="save b-none out-none d-block c-white green-bg br-5 p-10 fit-width fs-14 btn" type="submit" value="Save">
+              </form>
+            </div>
+            <!-- ====== End Draft ====== -->
+
+
+            <!-- ====== Start Targets ====== -->
+            <div class="targets br-10 bg-white p-20">
+                  <h2 class="green-color mb-5">Yearly Targets</h2>
+                  <p class="mb-20 c-gray fs-14">Targets Of The Year</p>
+
+              <div class="statistics">
+
+                <div class="statistic d-flex">
+                  <div class="icon red-bg br-5 flex-center mb-20">
+                    <i class="c-white fs-25 fa-solid fa-sack-dollar"></i>
+                  </div>
+                  <div class="stat">
+                    <div class="info-stat">
+                      <p class="c-gray mb-5">Money</p>
+                      <span class="fb">$20.000</span>
+                    </div>
+                    <div class="progress red-bg2">
+                      <span class="red-bg d-block p-relative" style="width: 76%" data-progress="76%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="statistic d-flex">
+                  <div class="icon green-bg br-5 flex-center mb-20">
+                    <i class="c-white fs-25 fa-solid fa-list-check"></i>
+                  </div>
+                  <div class="stat">
+                    <div class="info-stat">
+                      <p class="c-gray mb-5">Projects</p>
+                      <span class="fb">24</span>
+                    </div>
+                    <div class="progress green-bg2">
+                      <span class="green-bg d-block p-relative" style="width: 35%" data-progress="35%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="statistic d-flex">
+                  <div class="icon yellow-bg br-5 flex-center mb-20">
+                    <i class="c-white fs-25 fa-solid fa-user-plus"></i>
+                  </div>
+                  <div class="stat">
+                    <div class="info-stat">
+                      <p class="c-gray mb-5">Team</p>
+                      <span class="fb">12</span>
+                    </div>
+                    <div class="progress yellow-bg2">
+                      <span class="yellow-bg d-block p-relative" style="width: 62%" data-progress="62%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Targets ====== -->
+
+            <!-- ====== Start Tiecket ====== -->
+            <div class="tiecket br-10 bg-white p-20">
+                  <h2 class="green-color mb-5">Ticets Statistics</h2>
+                  <p class="mb-20 c-gray fs-14">Evrything About Sapport Tickets</p>
+
+              <div class="tieckets d-grid">
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="green-color fs-25 mb-10 fa-solid fa-list-ul"></i>
+                  <p class="fs-25 fb black-color mb-5">2500</p>
+                  <span class="d-block c-gray">Total</span>
+                </div>
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="yellow-color fs-25 mb-10 fa-solid fa-clock-rotate-left"></i>
+                  <p class="fs-25 fb black-color mb-5">500</p>
+                  <span>Pending</span>
+                </div>
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="blue-color fs-25 mb-10 fa-solid fa-flag-checkered"></i>
+                  <p class="fs-25 fb black-color mb-5">1900</p>
+                  <span class="d-block c-gray">Closed</span>
+                </div>
+                <div class="tieck-box br-10 txt-center p-20">
+                  <i class="red-color fs-25 mb-10 fa-solid fa-trash"></i>
+                  <p class="fs-25 fb black-color mb-5">100</p>
+                  <span class="d-block c-gray">Deleted</span>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Tiecket ====== -->
+
+
+            <!-- ====== Start News ====== -->
+            <div class="news br-10 p-20 bg-white">
+                  <h2 class="green-color mb-20">Latest News</h2>
+              
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="fs-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 fs-14 c-white fit-width">6 Hours Ago</div>
+              </div>
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="fs-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 fs-14 c-white fit-width">5 Days Ago</div>
+              </div>
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="fs-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 fs-14 c-white fit-width">7 Days Ago</div>
+              </div>
+              <div class="news-info">
+                <div class="image">
+                  <img class="br-10" src="images/sass.jpg" alt="" />
+                </div>
+                <div class="news">
+                  <p class="fb black-color fs-18">Created SASS Section</p>
+                  <span class="fs-14 c-gray">New SASS Examples & Tutorials</span>
+                </div>
+                <div class="time green-bg br-5 fs-14 c-white fit-width">9 Days Ago</div>
+              </div>
+            </div>
+            <!-- ====== End News ====== -->
+
+            <!-- ====== Start Tasks ====== -->
+            <div class="tasks p-20 bg-white br-10">
+              <h2 class="green-color mb-20">Latest Tasks</h2>
+              <div class="tasks-info flex-between mb-10">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray fs-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray fs-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray fs-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray fs-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+              <div class="tasks-info flex-between">
+                <div class="task p-10">
+                  <p class="fb fs-18 black-color">Record One New Video</p>
+                  <span class="c-gray fs-14">Record Python Create Exe Project</span>
+                </div>
+                <i class="fs-18 red-color fa-solid fa-trash"></i>
+              </div>
+
+            </div>
+
+            <!-- ====== End Tasks ====== -->
+
+            <!-- ====== Start Top Search ====== -->
+            <div class="top-search p-20 bg-white br-10">
+              <h2 class="green-color mb-20">Top Search Items</h2>
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="c-gray fb">Keyword</p>
+                </div>
+                <div class="count">
+                  <p class="c-gray fb">Search Count</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">Programming</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">92</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">JavaScript</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">165</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">PHP</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">1044</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">Code</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">321</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">HTML</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">65</p>
+                </div>
+              </div>
+
+              <div class="keywords flex-between mb-32">
+                <div class="key">
+                  <p class="black-color fb">CSS</p>
+                </div>
+                <div class="count">
+                  <p class="green-bg br-5 c-white fs-14">54</p>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Top Search ====== -->
+
+            <!-- ====== Start Start Uploads ====== -->
+            <div class="latest-uplods bg-white br-10 p-20">
+              <h2 class="green-color mb-20">Latest Uploads</h2>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/pdf-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">my-file.pdf</p>
+                  <span class="c-gray fs-14">Raed</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 fs-14">
+                  3.5MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/mp4-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">trip-video.mp4</p>
+                  <span class="c-gray fs-14">Admin</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 fs-14">
+                  320.4MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/png-icon.svg" alt="PDF">
+                <div class="file mb-20">
+                  <p class="black-color fb">my-picture.png</p>
+                  <span class="c-gray fs-14">Ahmed</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 fs-14">
+                  1.2MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/rar-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">my-file.rar</p>
+                  <span class="c-gray fs-14">Mohammed</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 fs-14">
+                  60.3MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/exe-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">my-program.exe</p>
+                  <span class="c-gray fs-14">Awad</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 fs-14">
+                  32.4MB
+                </div>
+              </div>
+
+              <div class="upload flex-between mb-10">
+                <img class="mb-10" src="images/mp3-icon.svg" alt="PDF">
+                <div class="file mb-10">
+                  <p class="black-color fb">audio-recording.mp3</p>
+                  <span class="c-gray fs-14">Ismael</span>
+                </div>
+                <div class="size p-5 green-bg c-white br-5 mb-10 fs-14">
+                  3.2MB
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Start Uploads ====== -->
+
+            <!-- ====== Start Project ====== -->
+            <div class="project bg-white br-10 p-20">
+              <h2 class="green-color mb-20">Last Project Progress</h2>
+              <div class="projects">
+                <ul>
+                  <li>Got The Project</li>
+                  <li>Start The Project</li>
+                  <li>The Project About To Finish</li>
+                  <li>Test The Project</li>
+                  <li>Finish The Project & Get Money</li>
+                </ul>
+              </div>
+              <img src="images/project.svg" alt="Project">
+            </div>
+            <!-- ====== End Project ====== -->
+
+            <!-- ====== Start Reminders ====== -->
+            <div class="reminders bg-white p-20 br-10">
+              <h2 class="mb-20 green-color">Reminders</h2>
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Check My Tasks List</p>
+                <span class="fs-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Check My Projects</p>
+                <span class="fs-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Call All My Clients</p>
+                <span class="fs-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+
+              <div class="remin mb-20">
+                <p class="black-color fb mb-5">Finish The Development Workshop</p>
+                <span class="fs-14 c-gray">28/09/2022 - 12:00am</span>
+              </div>
+            </div>
+            <!-- ====== End Reminders ====== -->
+
+            <!-- ====== Start Post ====== -->
+            <div class="post bg-white p-20 br-10">
+              <h2 class="green-color mb-20">Latest Post</h2>
+              <div class="user d-flex align-center mb-20">
+                <img class="br-50 mr-20 " src="images/avatar-haeder.jpg" alt="Avatar">
+                <div class="name">
+                  <p class="fb ">Raed Hassan</p>
+                  <span class="c-gray fs-14">About 9 Houre Ago</span>
+                </div>
+              </div>
+
+              <div class="user-post">
+                <p class="fs-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, corporis nihil deleniti molestias ea nesciunt id similique quia id similique quia</p>
+              </div>
+
+              <div class="like flex-between mb-20">
+                <div class="love cp">
+                  <i class="c-gray fa-regular fa-heart"></i> <span class="c-gray fb">1.5K</span>
+                </div>
+                <div class="comment cp">
+                  <i class="c-gray fa-regular fa-comment"></i> <span class="c-gray fb">360</span>
+                </div>
+              </div>
+            </div>
+            <!-- ====== End Post ====== -->
+
+            <!-- ====== Start Social ====== -->
+            <div class="social bg-white br-10 p-20">
+              <h2 class="green-color mb-20">Social Media Stats</h2>
+              <div class="social-icon flex-between mb-20">
+                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                <span class="ml-20 fb">90K Followers</span>
+                <a class="btn c-white" href="#">Follow</a>
+              </div>
+
+              <div class="social-icon flex-between mb-20 fb">
+                <div class="icon fb"><i class="fa-brands fa-facebook-f"></i></div>
+                <span class="ml-20 fb fb">3M Like</span>
+                <a class="fb btn c-white" href="#">Like</a>
+              </div>
+
+              <div class="social-icon flex-between mb-20 yt">
+                <div class="icon yt"><i class="fa-brands fa-youtube"></i></div>
+                <span class="ml-20 fb yt">900K</span>
+                <a class="btn c-white yt" href="#">Subscribe</a>
+              </div>
+
+              <div class="social-icon flex-between mb-20 in">
+                <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <span class="ml-20 fb in">100K Followers</span>
+                <a class="btn c-white in" href="#">Follow</a>
+              </div>
+            </div>
+
+            <!-- ====== Start Social ====== -->
+
+          </div>
+
+          <div class="container">
+            <div class="project-table bg-white fl-width mt-30 br-10 p-20 mb-20" >
+              <h2 class="green-color mb-20">Projects</h2>
+
+              <table class="fl-width" data-vertable="ver6">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Finish Date</th>
+                    <th>Client</th>
+                    <th>Price</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+
+                <tbody class="fb fs-14">
+                  <tr>
+                    <td>Online Store Builder</td>
+                    <td>15/06/2022</td>
+                    <td>Ismael</td>
+                    <td>$402</td>
+                    <td>
+                      <div class="team">
+                        <img src="images/taem2.svg" alt="">
+                        <img src="images/taem3.svg" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="btn green-bg fit-width c-white"> Completed</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>eCommerce Website Builder</td>
+                    <td>20/06/2022</td>
+                    <td>Mohammed</td>
+                    <td>$630</td>
+                    <td>
+                      <div class="team">
+                        <img src="images/taem3.svg" alt="">
+                        <img src="images/taem4.svg" alt="">
+                        <img src="images/taem1.svg" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="btn red-bg fit-width c-white "> Rejected</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Testing Security Websites</td>
+                    <td>1/07/2022</td>
+                    <td>Raed</td>
+                    <td>$1000</td>
+                    <td>
+                      <div class="team">
+                        <img src="images/taem2.svg" alt="">
+                        <img src="images/taem1.svg" alt="">
+                        <img src="images/taem4.svg" alt="">
+                        <img src="images/taem5.svg" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="btn blue-bg fit-width c-white"> In Progress</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Create App Android</td>
+                    <td>26/07/2022</td>
+                    <td>Alnahhal</td>
+                    <td>$320</td>
+                    <td>
+                      <div class="team">
+                        <img src="images/taem5.svg" alt="">
+                        <img src="images/taem3.svg" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="btn green-bg fit-width c-white"> Completed</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Security Website</td>
+                    <td>15/8/2022</td>
+                    <td>Hassan</td>
+                    <td>$550</td>
+                    <td>
+                      <div class="team">
+                        <img src="images/taem3.svg" alt="">
+                        <img src="images/taem4.svg" alt="">
+                        <img src="images/taem5.svg" alt="">
+                        <img src="images/taem1.svg" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="btn yellow-bg fit-width c-white">Pending</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Wordpress Website Builder</td>
+                    <td>28/08/2022</td>
+                    <td>Awad</td>
+                    <td>$600</td>
+                    <td>
+                      <div class="team">
+                        <img src="images/taem1.svg" alt="">
+                        <img src="images/taem2.svg" alt="">
+                        <img src="images/taem3.svg" alt="">
+                        <img src="images/taem5.svg" alt="">
+                      </div>
+
+                    </td>
+                    <td>
+                      <p class="btn red-bg fit-width c-white"> Rejected</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+       </div>
+    </main>
+  </body>
+</html>
