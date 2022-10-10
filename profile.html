@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/fremwork.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="container">
+          <div class="logo">
+            <h1 class="p-relative">Raed</h1>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html" class="fs-14">
+                  <i class="fa-solid fa-chalkboard-user fa-fw"></i> 
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="fs-14">
+                  <i class="fa-solid fa-gears fa-fw"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="profile.html" class="fs-14">
+                  <i class="fa-solid fa-user fa-fw"></i> 
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="projects.html" class="fs-14">
+                  <i class="fa-solid fa-list-check fa-fw"></i> 
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="Courses.html" class="fs-14">
+                  <i class="fa-solid fa-user-graduate fa-fw"></i> 
+                  <span>courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="friends.html" class="fs-14">
+                  <i class="fa-solid fa-user-group fa-fw"></i> 
+                  <span>Friends</span>
+                </a>
+              </li>
+                <a href="files.html" class="fs-14">
+                  <li><i class="fa-solid fa-folder fa-fw"></i> 
+                  <span>Files</span>
+                </a>
+              </li>
+              <li>
+                <a href="plans.html" class="fs-14">
+                  <i class="fa-solid fa-money-check-dollar fa-fw"></i> 
+                  <span>Plans</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+       <div class="content fl-width">
+            <header>
+            <div class="container">
+                <div class="form p-relative">
+                <i class="fa-solid fa-magnifying-glass"></i> <input type="text" name="search" placeholder="Type A Keyword">
+                </div>
+                <div class="user-natice p-relative">
+                <div class="notice"><i class="fa-solid fa-bell"></i></div>
+                <div class="avatar"><img src="images/avatar-haeder.jpg" alt="Avatar"></div>
+                </div>
+            </div>
+            </header>
+            <section class="profile">
+                <div class="header"><h2>Profile</h2></div>
+                <div class="container mt-30 mb-32 d-grid">
+                    <!-- ====== Start User Info ====== -->
+                    <div class="user-info d-flex align-center bg-white br-10">
+                        <div class="avatar p-50 txt-center">
+                            <img class="mb-5" src="images/avatar-haeder.jpg" alt="avatar">
+                            <h3 class="mb-5 black-color">Raed Alnahhal</h3>
+                            <span class="c-gray mb-10 d-block fb">Level 36</span>
+                            <div class="progress br-10">
+                                <span style="width: 73%;" class="d-block br-10"></span>
+                            </div>
+                            <div class="rating mt-10">
+                                <div class="icon-star mb-5 yellow-color">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span class="d-block c-gray fs-14">940 Rating</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info fb fl-width text-c-mobile">
+                            <div class="box d-flex">
+                                <h4 class="c-gray fl-width">General Information</h4>
+                                <div class="fs-14">
+                                    <span class="c-gray">Full Name: </span>
+                                    <span>Raed Alnahhal</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Gender: </span>
+                                    <span>Male</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Country: </span>
+                                    <span>Palestine</span>
+                                </div>
+                                <div class="toggle">
+                                    <input type="checkbox" id="g-info" checked>
+                                    <label for="g-info"></label>
+                                </div>
+                            </div>
+
+                            <div class="box d-flex">
+                                <h4 class="c-gray fl-width">Personal Information</h4>
+                                <div class="fs-14">
+                                    <span class="c-gray">Email: </span>
+                                    <span>raed.n@nahhal.com</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Phone: </span>
+                                    <span>+972123456789</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Date Of Birth: </span>
+                                    <span>05/12/1990</span>
+                                </div>
+                                <div class="toggle">
+                                    <input type="checkbox" id="p-info">
+                                    <label for="p-info"></label>
+                                </div>
+                            </div>
+
+                            <div class="box d-flex">
+                                <h4 class="c-gray fl-width">Job Information</h4>
+                                <div class="fs-14">
+                                    <span class="c-gray">Title: </span>
+                                    <span>Full Stack Developer</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Programming Language: </span>
+                                    <span>PHP & C++</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Years OF Experience: </span>
+                                    <span>5+</span>
+                                </div>
+                                <div class="toggle">
+                                    <input type="checkbox" id="j-info" checked>
+                                    <label for="j-info"></label>
+                                </div>
+                            </div>
+
+                            <div class="box d-flex">
+                                <h4 class="c-gray fl-width">Billing Information</h4>
+                                <div class="fs-14">
+                                    <span class="c-gray">Payment Method: </span>
+                                    <span>Paypal</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Email: </span>
+                                    <span>raed.n@nahhal.com</span>
+                                </div>
+                                <div class="fs-14">
+                                    <span class="c-gray">Subscription: </span>
+                                    <span>Monthly</span>
+                                </div>
+                                <div class="toggle">
+                                    <input type="checkbox" id="b-info" checked>
+                                    <label for="b-info"></label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ====== End User Info ====== -->
+
+                    <!-- ====== Start Skills ====== -->
+                    <div class="skills bg-white br-10 p-20">
+                          <h2 class="green-color mb-5">My Skills</h2>
+                          <p class="c-gray  mb-32 fs-14 fb">Complete Skills List</p>
+                          <div class="my-skills text-c-mobile">
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">HTML</span>
+                              <span class="btn green-bg c-white">Pugjs</span>
+                              <span class="btn green-bg c-white">HAML</span>
+                            </div>
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">CSS</span>
+                              <span class="btn green-bg c-white">SASS</span>
+                              <span class="btn green-bg c-white">Stylus</span>
+                            </div>
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">JavaScript</span>
+                              <span class="btn green-bg c-white">TypeScript</span>
+                            </div>
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">Vuejs</span>
+                              <span class="btn green-bg c-white">Reactjs</span>
+                            </div>
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">Jest</span>
+                              <span class="btn green-bg c-white">Jasmine</span>
+                            </div>
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">PHP</span>
+                              <span class="btn green-bg c-white">Laravel</span>
+                            </div>
+                            <div class="box mb-20">
+                              <span class="btn green-bg c-white">Python</span>
+                              <span class="btn green-bg c-white">Django</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ====== End Skills ====== -->
+
+                    <!-- ====== Start Activities ====== -->
+                      <div class="activities bg-white br-10 p-20">
+                        <h2 class="green-color mb-5">Latest Activities</h2>
+                        <p class="c-gray fs-14 fb">Latest Activities Done By The User</p>
+
+                        <div class="box flex-between">
+                          <div class="img flex-center">
+                            <img src="images/store.svg" alt="Store">
+                            <div class="info-activities">
+                              <p class="mb-5 black-color fb">Store</p>
+                              <span class="c-gray fb fs-14">Bought The Mastring Python Course</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <p class="mb-5 black-color fb">10:23</p>
+                            <span class="c-gray fb fs-14">Yesterday</span>
+                          </div>
+                        </div>
+
+                        <div class="box flex-between">
+                          <div class="img flex-center">
+                            <img src="images/academy.svg" alt="Store">
+                            <div class="info-activities">
+                              <p class="mb-5 black-color fb">Academy</p>
+                              <span class="c-gray fb fs-14">Got The PHP Certificate</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <p class="mb-5 black-color fb">6:30</p>
+                            <span class="c-gray fb fs-14">Yesterday</span>
+                          </div>
+                        </div>
+                        
+                        <div class="box flex-between">
+                          <div class="img flex-center">
+                            <img src="images/badges.svg" alt="Store">
+                            <div class="info-activities">
+                              <p class="mb-5 black-color fb">Badges</p>
+                              <span class="c-gray fb fs-14">Unlocked The 10 Skills Badge</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <p class="mb-5 black-color fb">12:52</p>
+                            <span class="c-gray fb fs-14">Yesterday</span>
+                          </div>
+                        </div>
+
+                        <div class="box flex-between">
+                          <div class="img flex-center">
+                            <img src="images/online-store.svg" alt="Store">
+                            <div class="info-activities">
+                              <p class="mb-5 black-color fb">Store</p>
+                              <span class="c-gray fb fs-14">Bought The Mastring Python Course</span>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <p class="mb-5 black-color fb">9:15</p>
+                            <span class="c-gray fb fs-14">Yesterday</span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    <!-- ====== End Activities ====== -->
+
+
+                </div>   
+            </section>        
+        </div>  
+    </main>
+</body>
+</html>
+        
